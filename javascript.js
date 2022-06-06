@@ -27,14 +27,35 @@ function operate() {
 
 }
 
-//Event listeners for buttons
-document.getElementById('1').addEventListener('click', function(){ input = input.concat(1); });
-document.getElementById('2').addEventListener('click', function(){ input = input.concat(2); });
-document.getElementById('3').addEventListener('click', function(){ input = input.concat(3); });
-document.getElementById('4').addEventListener('click', function(){ input = input.concat(4); });
-document.getElementById('5').addEventListener('click', function(){ input = input.concat(5); });
-document.getElementById('6').addEventListener('click', function(){ input = input.concat(6); });
-document.getElementById('7').addEventListener('click', function(){ input = input.concat(7); });
-document.getElementById('8').addEventListener('click', function(){ input = input.concat(8); });
-document.getElementById('9').addEventListener('click', function(){ input = input.concat(9); });
-document.getElementById('0').addEventListener('click', function(){ input = input.concat(0); });
+
+//Event listeners for button inputs and display
+document.getElementById('1').addEventListener('click', function() { input = input.concat(1); });
+document.getElementById('1').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'1'});
+document.getElementById('2').addEventListener('click', function() { input = input.concat(2); });
+document.getElementById('2').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'2'});
+document.getElementById('3').addEventListener('click', function() { input = input.concat(3); });
+document.getElementById('3').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'3'});
+document.getElementById('4').addEventListener('click', function() { input = input.concat(4); });
+document.getElementById('4').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'4'});
+document.getElementById('5').addEventListener('click', function() { input = input.concat(5); });
+document.getElementById('5').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'5'});
+document.getElementById('6').addEventListener('click', function() { input = input.concat(6); });
+document.getElementById('6').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'6'});
+document.getElementById('7').addEventListener('click', function() { input = input.concat(7); });
+document.getElementById('7').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'7'});
+document.getElementById('8').addEventListener('click', function() { input = input.concat(8); });
+document.getElementById('8').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'8'});
+document.getElementById('9').addEventListener('click', function() { input = input.concat(9); });
+document.getElementById('9').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'9'});
+document.getElementById('0').addEventListener('click', function() { input = input.concat(0); });
+document.getElementById('1').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'0'});
