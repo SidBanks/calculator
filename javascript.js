@@ -1,8 +1,10 @@
-//Declaration of keypad variables
+//Declaration of variables
 let a;
 let b;
 let output;
-let input;
+let input1;
+let input2;
+let operator;
 
 //Basic Mathmatical functions
 function add(a, b) {
@@ -59,3 +61,4 @@ document.getElementById('9').addEventListener('click', function() { document.get
 document.getElementById('0').addEventListener('click', function() { input = input.concat(0); });
 document.getElementById('1').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '0'});
+
