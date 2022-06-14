@@ -2,8 +2,7 @@
 let a;
 let b;
 let output;
-let input1;
-let input2;
+let input;
 let operator;
 
 //Basic Mathmatical functions
@@ -19,7 +18,7 @@ function multiply(a, b) {
     return a * b;
 }
 
-function division(a, b) {
+function divide(a, b) {
     return a / b;
 }
 
@@ -59,6 +58,23 @@ document.getElementById('9').addEventListener('click', function() { input = inpu
 document.getElementById('9').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '9'});
 document.getElementById('0').addEventListener('click', function() { input = input.concat(0); });
-document.getElementById('1').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+document.getElementById('0').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '0'});
+document.getElementById('.').addEventListener('click', function() { input = input.concat(.); });
+document.getElementById('.').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'.'});
+document.getElementById('addition').addEventListener('click', function() { operator = add});
+document.getElementById('addition').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'+'});
+document.getElementById('subtraction').addEventListener('click', function() { operator = subtract});
+document.getElementById('subtraction').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'-'});
+document.getElementById('multiplication').addEventListener('click', function() { operator = multiply});
+document.getElementById('multiplication').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'*'});
+document.getElementById('division').addEventListener('click', function() { operator = divide});
+document.getElementById('division').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
+'/'});
+
+
 
