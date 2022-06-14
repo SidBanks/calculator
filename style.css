@@ -1,3 +1,16 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .calculatorBody {
     display: flex;
     flex-direction: column;
