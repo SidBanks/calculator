@@ -1,6 +1,6 @@
 //Declaration of variables
-let a;
-let b;
+let a = 0;
+let b = 0;
 let output;
 let input;
 let operator;
@@ -20,6 +20,15 @@ function multiply(a, b) {
 
 function divide(a, b) {
     return a / b;
+}
+
+//Function to convert input to float, in order to be used in operations.
+function inputConverter() {
+    if (a != 0) {
+        b = parseFloat(input);
+    } else {
+        a = parseFloat(input);
+    }
 }
 
 // Operate function. Takes input from html page and calls an 
@@ -66,15 +75,21 @@ document.getElementById('.').addEventListener('click', function() { document.get
 document.getElementById('addition').addEventListener('click', function() { operator = add});
 document.getElementById('addition').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '+'});
+document.getElementById('addition').addEventListener('click', inputConverter)
 document.getElementById('subtraction').addEventListener('click', function() { operator = subtract});
 document.getElementById('subtraction').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '-'});
+document.getElementById('subtraction').addEventListener('click', inputConverter)
+
 document.getElementById('multiplication').addEventListener('click', function() { operator = multiply});
 document.getElementById('multiplication').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '*'});
+document.getElementById('multiplication').addEventListener('click', inputConverter)
 document.getElementById('division').addEventListener('click', function() { operator = divide});
 document.getElementById('division').addEventListener('click', function() { document.getElementById('calculatorDisplay').innerHTML =
 '/'});
+document.getElementById('division').addEventListener('click', inputConverter)
+
 
 
 
