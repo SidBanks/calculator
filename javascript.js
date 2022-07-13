@@ -22,6 +22,13 @@ function divide(a, b) {
     return a / b;
 }
 
+function clear {
+    input = 0;
+    a = 0;
+    b = 0;
+    output = 0;
+}
+
 //Function to convert input to float, in order to be used in operations.
 function inputConverter() {
     if (a != undefined) {
@@ -36,22 +43,27 @@ function inputConverter() {
 function operate(a, b) {
     if (a == undefined && b == undefined) {
         output = 0;
+        document.getElementById("calculatorDisplay").innerHTML = output;
     } else if (a != undefined && b == undefined) {
         b = input;
     }
 
     if (operator === 'add') {
-        document.getElementById("calculatorDisplay").innerHTML = add(a, b);
-        return add(a, b);
+        output = add(a, b);
+        document.getElementById("calculatorDisplay").innerHTML = output;
+        return output;
     } else if (operator === 'subtract') {
-        document.getElementById("calculatorDisplay").innerHTML = subtract(a, b);
-        return subtract(a, b);
+        output = subtract(a, b);
+        document.getElementById("calculatorDisplay").innerHTML = output;
+        return output;
     } else if (operator === 'multiply') {
-        document.getElementById("calculatorDisplay").innerHTML = multiply(a, b);
-        return multiply(a, b);
+        output = multiply(a, b);
+        document.getElementById("calculatorDisplay").innerHTML = output;
+        return output;
     } else if (operator === 'divide') {
-        document.getElementById("calculatorDisplay").innerHTML = divide(a,b);
-        return divide(a, b);
+        output = divide(a, b);
+        document.getElementById("calculatorDisplay").innerHTML = output;
+        return output;
     }
 }
 
